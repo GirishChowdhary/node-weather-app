@@ -8,7 +8,7 @@ locForm.addEventListener('submit', (e) => {
     error.textContent = "Loading..."
     forcast.textContent = "";
     const location = search.value
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data.err) {
                 error.textContent = data.err;
