@@ -1,5 +1,3 @@
-console.log('client side javascript')
-
 const locForm = document.querySelector('form');
 const search = document.querySelector('input')
 const error = document.querySelector('#error');
